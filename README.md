@@ -1,2 +1,2 @@
 # ts-exercise
-## A second-level heading
+## Install dependencies:
