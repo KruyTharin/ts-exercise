@@ -43,8 +43,8 @@ class Rectangle1 extends Shape {
   }
 }
 
-const rectangle1 = new Rectangle1("pink", 10, 12);
-console.log(rectangle1.getPerimeter());
+// const rectangle1 = new Rectangle1("pink", 10, 12);
+// console.log(rectangle1.getPerimeter());
 
 //  Write a TypeScript exercise that defines an abstract class called Animal with properties like name and an abstract method makeSound(). Create derived classes (e.g., Tiger, Lion) that extend Animal and implement the makeSound() method with the unique sound each animal makes.
 
@@ -71,8 +71,8 @@ class Tiger1 extends Animal1 {
   }
 }
 
-const tiger1 = new Tiger1("tiger", "hhaahha");
-console.log(tiger1.makeSound());
+// const tiger1 = new Tiger1("tiger", "hhaahha");
+// console.log(tiger1.makeSound());
 
 // Write a TypeScript program that defines an abstract class Employee with properties such as name, employeeId, and an abstract method calculateSalary(). Create derived classes (e.g., FullTimeEmployee, PartTimeEmployee) that extend Employee and provide salary calculation logic based on employment type.
 
@@ -118,16 +118,16 @@ const fullTimeEmployee = new FullTimeEmployee("Veerle Brock", 105, 6000);
 const partTimeEmployee = new PartTimeEmployee("Alaya Neha", 104, 15, 40);
 
 // Calculate and print salaries
-console.log(
-  `Full-Time Employee ${
-    fullTimeEmployee.name
-  }'s Salary: $${fullTimeEmployee.calculateSalary()}`
-);
-console.log(
-  `Part-Time Employee ${
-    partTimeEmployee.name
-  }'s Salary: $${partTimeEmployee.calculateSalary()}`
-);
+// console.log(
+//   `Full-Time Employee ${
+//     fullTimeEmployee.name
+//   }'s Salary: $${fullTimeEmployee.calculateSalary()}`
+// );
+// console.log(
+//   `Part-Time Employee ${
+//     partTimeEmployee.name
+//   }'s Salary: $${partTimeEmployee.calculateSalary()}`
+// );
 
 // Geometric Shapes:
 // Write a TypeScript program that creates an abstract class GeometricShape with properties like name and abstract methods for calculating area and perimeter. Implement derived classes for specific shapes (e.g., Circle, Rectangle, Triangle) that extend GeometricShape and provide concrete implementations for area and perimeter calculations.
@@ -208,16 +208,16 @@ const rectangle = new Rectangle("Rectangle", 4, 6);
 const triangle = new Triangle("Triangle", 3, 4);
 
 // Calculate and print area and perimeter
-console.log(
-  `${c.name} - Area: ${c.calculateArea()}, Perimeter: ${c.calculatePerimeter()}`
-);
-console.log(
-  `${
-    rectangle.name
-  } - Area: ${rectangle.calculateArea()}, Perimeter: ${rectangle.calculatePerimeter()}`
-);
-console.log(
-  `${
-    triangle.name
-  } - Area: ${triangle.calculateArea()}, Perimeter: ${triangle.calculatePerimeter()}`
-);
+// console.log(
+//   `${c.name} - Area: ${c.calculateArea()}, Perimeter: ${c.calculatePerimeter()}`
+// );
+// console.log(
+//   `${
+//     rectangle.name
+//   } - Area: ${rectangle.calculateArea()}, Perimeter: ${rectangle.calculatePerimeter()}`
+// );
+// console.log(
+//   `${
+//     triangle.name
+//   } - Area: ${triangle.calculateArea()}, Perimeter: ${triangle.calculatePerimeter()}`
+// );
