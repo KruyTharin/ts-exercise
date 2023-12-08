@@ -1,4 +1,9 @@
-//  Write a TypeScript program that creates an abstract class called Shape with properties like color and an abstract method getPerimeter(). Implement derived classes for specific shapes (e.g., Circle, Rectangle) that extend Shape and provide concrete implementations for calculating their perimeters.
+/**
+ * Write a TypeScript program that creates an abstract class called Shape
+ * with properties like color and an abstract method getPerimeter().
+ * Implement derived classes for specific shapes (e.g., Circle, Rectangle) that extend Shape
+ * and provide concrete implementations for calculating their perimeters.
+ */
 
 abstract class Shape {
   color: string = "";
@@ -9,7 +14,7 @@ abstract class Shape {
   abstract getPerimeter(radius: number): number;
 }
 
-class Circle1 extends Shape {
+export class Circle extends Shape {
   static pi: number = 3.14;
   radius: number = 0;
 
@@ -19,7 +24,7 @@ class Circle1 extends Shape {
   }
 
   getPerimeter(): number {
-    return 2 * Circle1.pi * this.radius;
+    return 2 * Circle.pi * this.radius;
   }
 }
 
@@ -37,9 +42,6 @@ class Rectangle1 extends Shape {
     return 2 * (this.width + this.length);
   }
 }
-
-const circle1 = new Circle1("pink", 2);
-console.log(circle1.getPerimeter());
 
 const rectangle1 = new Rectangle1("pink", 10, 12);
 console.log(rectangle1.getPerimeter());
@@ -142,7 +144,7 @@ abstract class GeometricShape {
 }
 
 // Derived class Circle
-class Circle extends GeometricShape {
+class Circle1 extends GeometricShape {
   constructor(public name: string, private radius: number) {
     super(name);
   }
@@ -201,15 +203,13 @@ class Triangle extends GeometricShape {
 }
 
 // Create instances of Circle, Rectangle, and Triangle
-const circle = new Circle("Circle", 5);
+const c = new Circle1("Circle", 5);
 const rectangle = new Rectangle("Rectangle", 4, 6);
 const triangle = new Triangle("Triangle", 3, 4);
 
 // Calculate and print area and perimeter
 console.log(
-  `${
-    circle.name
-  } - Area: ${circle.calculateArea()}, Perimeter: ${circle.calculatePerimeter()}`
+  `${c.name} - Area: ${c.calculateArea()}, Perimeter: ${c.calculatePerimeter()}`
 );
 console.log(
   `${

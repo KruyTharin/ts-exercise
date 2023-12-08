@@ -1,5 +1,5 @@
-import { Bus } from "./oop/classDefinitions";
+import { Circle } from "./oop/abstract";
 
 // import class for testing
-const bus = new Bus("Elon Musk", "Tesla ModelX", 2023);
-console.log(bus.start());
+const circle1 = new Circle("pink", 2);
+console.log(circle1.getPerimeter());
