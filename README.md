@@ -1,2 +1,4 @@
 # ts-exercise
-## Install dependencies:
+## Commands
+**Install dependencies:**
+npm install
