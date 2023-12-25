@@ -7,8 +7,5 @@ enum LogLevel {
   ERROR = "ERROR",
 }
 
-// const
-const logLevel = ["DEBUG", "WARNING", "ERROR"] as const;
-
 // type
 type LogLevelType = "DEBUG" | "WARNING" | "ERROR";
