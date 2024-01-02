@@ -47,8 +47,6 @@ This guide will walk you through setting up your environment to run TypeScript i
    This will compile all _.ts files in the project to _.js files.
 
    ```sh
-   # run only first time typescript with auto compile to js
-
    tsc
    ```
 
